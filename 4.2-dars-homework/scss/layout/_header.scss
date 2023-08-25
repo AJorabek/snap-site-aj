@@ -1,0 +1,127 @@
+.header {
+}
+.header__container {
+  margin-top: 3.4rem;
+  margin-bottom: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-wrapper {
+  display: flex;
+  align-items: center;
+}
+.sitenav {
+  margin-left: 6.2rem;
+}
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.sitenav__item__link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #686868;
+}
+.sitenav__list__item__link__text:hover {
+  color: #151515;
+}
+.right-wrapper {
+  display: flex;
+  align-items: center;
+}
+.login {
+  margin-right: 4rem;
+  color: #686868;
+}
+.login:hover {
+  color: #151515;
+}
+
+// Hover list
+.dropbtn {
+  color: #686868;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: $main-ff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 5s;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #82c4e3;
+  transition: 0.5s;
+}
+.right-sidebar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.nav-toggler {
+  display: none;
+}
+// Hover list end
+@media screen and (max-width: 731px) {
+  .sitenav {
+    display: none;
+  }
+  .right-sidebar {
+    display: none;
+  }
+  .nav-toggler {
+    display: block;
+  }
+}
+@media screen and (max-width: 941px) {
+  .sitenav {
+    margin-left: 1rem;
+  }
+
+  .sitenav__list {
+    gap: 0;
+    gap: 1rem;
+  }
+  .carrer {
+    margin-right: 1rem;
+  }
+  .login {
+    margin-right: 0;
+    margin-right: 2rem;
+  }
+}

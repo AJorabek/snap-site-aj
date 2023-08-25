@@ -1,0 +1,38 @@
+.register-btn {
+  width: 100%;
+  max-width: 104px;
+  padding: 13px 22px;
+  color: #686868;
+  border: 2px solid #686868;
+  border-radius: 15px;
+  text-align: center;
+}
+.register-btn:hover {
+  border: 2px solid #151515;
+  color: #151515;
+  transition: 0.5s;
+  box-shadow: 5px 10px;
+}
+.learn-btn {
+  width: 100%;
+  max-width: 163px;
+  background-color: #151515;
+  color: #fafafa;
+  padding: 15px 28px;
+  border: 2px solid #686868;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 1.55556;
+  font-size: 18px;
+}
+.learn-btn:hover {
+  background-color: #fff;
+  color: #151515;
+  transform: rotate(360deg);
+
+  transition: 1s;
+}
+.learn-btn:active {
+  box-shadow: 50px 25px rgb(0, 0, 0);
+  transform: scale(0.9);
+}
